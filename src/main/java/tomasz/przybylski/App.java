@@ -1,8 +1,20 @@
 package tomasz.przybylski;
 
+import java.util.List;
+
 public class App {
 
     public static void main(String[] args) {
+        Employee wozny = new Employee("Marian", "Paździoch", "Woźny");
+        Employee matematyk = new Employee("Julian", "Tuwim", "Nauczyciel");
+        Employee dyrektor = new Employee("Gurubashi", "Xanax", "Dyrektor");
+
+        System.out.println(wozny.fullInfo());
+
+        List<Employee> employees = List.of(wozny, matematyk, dyrektor);
+
+        System.out.println(employees);
+
         School school = new School();
         System.out.println(school.name);
 
